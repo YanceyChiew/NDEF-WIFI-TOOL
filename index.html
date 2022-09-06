@@ -1,0 +1,60 @@
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<header>
+	<br>
+	<caption>Write WLAN AP Info To NFC Tag</caption>
+	<div>
+		<p id="p_log">
+			[--- log shows here ---]
+		</p>
+	</div>
+</header>
+<body>
+	<title>NDEF WIFI TOOL</title>
+	<main>
+		<fieldset>
+			<fieldset>
+				<div>
+					<p>select auth type:</p>
+					<select id="s_authType"></select>
+				</div>
+				<br>
+				<div>
+					<p>select crypt type:</p>
+					<select id="s_cryptType"></select>
+				</div>
+			</fieldset>
+			<br>
+			<fieldset>
+				<div>
+					<p>input your wifi ssid:</p>
+					<input type="text" id="i_ssid"></input>
+				</div>
+				<br>
+				<div>
+					<p>input your wifi password:</p>
+					<input type="password" id="i_passwd"></input><button id="b_passwd_v">-_-</button>
+				</div>
+			</fieldset>
+			<br>
+			<fieldset>
+				<div>
+					<details>
+					<summary>input your routers mac address</summary>
+						<p>default value <code>FF:FF:FF:FF:FF:FF</code> matchs any mac address.</p>
+					</details>
+					<input type="text" value="FF:FF:FF:FF:FF:FF" id="i_macaddr"></input>
+				</div>
+			</fieldset>
+			<br>
+			<button id="b_ok">OK</button>
+		</fieldset>
+	</main>
+
+	<footer>
+		<p>Powered by me</p>
+	</footer>
+
+</body>
+<script type="text/javascript" src="./main.js"></script>
